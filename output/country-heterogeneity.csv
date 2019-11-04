@@ -1,0 +1,88 @@
+country,post_tax_relationship_with_GDPpc,pre_tax_relationship_with_GDPpc
+Argentina,positive,positive
+Armenia,ambiguous,negative
+Australia,ambiguous,ambiguous
+Austria,ambiguous,ambiguous
+Bangladesh,negative,ambiguous
+Belarus,ambiguous,ambiguous
+Belgium,ambiguous,ambiguous
+Botswana,negative,negative
+Brazil,ambiguous,ambiguous
+Bulgaria,negative,ambiguous
+Canada,negative,negative
+Chile,negative,negative
+China,positive,positive
+Colombia,positive,positive
+Costa Rica,negative,negative
+Côte d’Ivoire,ambiguous,ambiguous
+Croatia,negative,negative
+Cyprus,ambiguous,negative
+Czechia,negative,ambiguous
+Denmark,negative,negative
+Dominican Republic,ambiguous,ambiguous
+Egypt,positive,positive
+El Salvador,positive,positive
+Estonia,negative,negative
+Fiji,positive,positive
+Finland,ambiguous,ambiguous
+France,ambiguous,ambiguous
+Georgia,positive,positive
+Germany,negative,ambiguous
+Greece,negative,negative
+Guatemala,positive,positive
+Honduras,ambiguous,positive
+Hong Kong SAR China,positive,positive
+Hungary,ambiguous,positive
+India,positive,positive
+Iran,negative,negative
+Ireland,negative,ambiguous
+Israel,negative,positive
+Jamaica,positive,positive
+Japan,positive,positive
+Jordan,negative,negative
+Kazakhstan,negative,negative
+Kenya,positive,positive
+Lithuania,positive,positive
+Luxembourg,ambiguous,ambiguous
+Madagascar,positive,positive
+Malawi,positive,positive
+Malaysia,negative,negative
+Mauritania,positive,positive
+Mauritius,negative,negative
+Mexico,ambiguous,ambiguous
+Moldova,negative,ambiguous
+Morocco,positive,positive
+Nepal,ambiguous,ambiguous
+Netherlands,ambiguous,negative
+New Zealand,ambiguous,negative
+Norway,ambiguous,ambiguous
+Pakistan,positive,positive
+Panama,negative,negative
+Peru,ambiguous,ambiguous
+Philippines,ambiguous,ambiguous
+Poland,positive,positive
+Portugal,ambiguous,ambiguous
+Qatar,positive,ambiguous
+Romania,ambiguous,ambiguous
+Rwanda,negative,negative
+Sierra Leone,positive,positive
+Singapore,positive,positive
+Slovakia,ambiguous,ambiguous
+Slovenia,negative,negative
+South Africa,ambiguous,ambiguous
+South Korea,negative,negative
+Spain,ambiguous,ambiguous
+Sri Lanka,positive,positive
+Sudan,positive,positive
+Sweden,ambiguous,ambiguous
+Switzerland,positive,ambiguous
+Taiwan,positive,positive
+Tanzania,negative,ambiguous
+Thailand,ambiguous,ambiguous
+Tunisia,positive,positive
+Turkey,ambiguous,ambiguous
+Uganda,negative,negative
+United Kingdom,ambiguous,ambiguous
+United States,ambiguous,ambiguous
+Uruguay,ambiguous,ambiguous
+Zambia,positive,positive

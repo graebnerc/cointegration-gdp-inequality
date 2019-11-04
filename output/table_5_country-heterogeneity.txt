@@ -1,0 +1,42 @@
+Consistently positive:
+ ------------------------------------------------------------------------
+ Argentina China Colombia Egypt El Salvador Fiji Georgia Guatemala Hong Kong SAR China India Jamaica Japan Kenya Lithuania Madagascar Malawi Mauritania Morocco Pakistan Poland Sierra Leone Singapore Sri Lanka Sudan Taiwan Tunisia Zambia 
+======================================================================== 
+Consistently negative:
+ ------------------------------------------------------------------------
+ Botswana Canada Chile Costa Rica Croatia Denmark Estonia Greece Iran Jordan Kazakhstan Malaysia Mauritius Panama Rwanda Slovenia South Korea Uganda 
+======================================================================== 
+
+Significant relationship only for pre-tax (positive):
+ Honduras Hungary 
+======================================================================== 
+
+Significant relationship only for pre-tax (negative):
+ ------------------------------------------------------------------------
+ Armenia Cyprus Netherlands New Zealand 
+======================================================================== 
+
+Significant relationship only for post-tax (positive):
+ ------------------------------------------------------------------------
+ Qatar Switzerland 
+======================================================================== 
+
+Significant relationship only for post-tax (negative):
+ ------------------------------------------------------------------------
+ Bangladesh Bulgaria Czechia Germany Ireland Moldova Tanzania 
+======================================================================== 
+
+Positive relationship for post-tax, negative for pre-tax:
+ ------------------------------------------------------------------------
+  
+======================================================================== 
+
+Negative relationship for post-tax, positive for pre-tax:
+ ------------------------------------------------------------------------
+ Israel 
+======================================================================== 
+
+Ambiguous relationship for post-tax and pre-tax:
+ ------------------------------------------------------------------------
+ Australia Austria Belarus Belgium Brazil Côte d’Ivoire Dominican Republic Finland France Luxembourg Mexico Nepal Norway Peru Philippines Portugal Romania Slovakia South Africa Spain Sweden Thailand Turkey United Kingdom United States Uruguay 
+========================================================================

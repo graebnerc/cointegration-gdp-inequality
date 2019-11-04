@@ -1,0 +1,139 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# Replication code and data for: "The heterogeneous relationship between income and inequality: a panel co-integration approach"
+
+[Svenja Flechtern](http://www.svenjaflechtner.de/) and 
+[Claudius Gräbner](https://claudius-graebner.com/)
+
+Published as: Flechtner, S. and Gräbner, C. (2019): 
+The heterogeneous relationship between income and inequality:
+a panel co-integration approach, *Economics Bulletin*, 
+DOI: [xxx](xxx) (open access).
+
+## Description of code
+
+The dataset used in the paper gets recreated from the raw data as it can be 
+downloaded from the web via `R/create_dataset.R` (see below). 
+
+The estimation results can be replicated via the Stata code in `stata/do-file_Flechtner_Graebner_2019_gdp-ineq-cointegration-short`.
+
+The visualizations and the country classification table can be replicated using
+the R code in `R/cointegration-results-analysis.R`.
+
+The Stata code has been written by Svenja Flechtner, the R code by Claudius Gräbner.
+
+All code assumes the working directory to be organized as in this Github repo.
+
+## Description of results
+
+The file `output/cointegration_results` summarizes the results in a readable way.
+The csv version is used as an input for the visualization in the paper.
+
+It contains the following variables:
+
+| Column  | Description                                                          | 
+| --------|:--------------------------------------------------------------------:| 
+| country | country name abbreviation as in dataset |
+| id  | id created during analysis (see stata do-file) |
+| gini_mkt_coeff | coefficient obtained from PDOLS estimator for market gini; see stata do-file. recovered from stata log file `stata/logfile_ginimarketln-GDPpercapitaln` |
+| gini_disp_coeff | coefficient obtained from PDOLS estimator for disposable gini; see stata do-file. recovered from stata log file `stata/logfile_ginidispln-GDPpercapitaln` |
+| gini_mkt_t | t statistic for coefficient obtained from PDOLS estimator for market gini; see stata do-file. recovered from stata log file `output/logfile_ginimarketln-GDPpercapitaln` |
+| gini_disp_t | t statistic for coefficient obtained from PDOLS estimator for disposable gini; see stata do-file. recovered from stata log file `stata/logfile_ginidispln-GDPpercapitaln` |
+| gini_mkt_t_abs | absolute value of `gini_mkt_t` |
+| gini_disp_t_abs | absolute value of `gini_disp_t` |
+| no_obs | number of observations |
+| df | degrees of freedom |
+| critical_value | Critical values of Student's t distribution with respective number of degrees of freedom for `alpha=0.975` |
+| gini_mkt_sign5 | dummy variable with 1 if `gini_mkt_t_abs` >= critival_value, 0 otherwise |
+| gini_disp_sign5 | dummy variable with 1 if `gini_disp_t_abs` >= critival_value, 0 otherwise |
+
+## Description of data
+
+The dataset gets recreated via `R/create_dataset.R`. Here we assume you have dowloaded
+the [Penn World Table](https://www.rug.nl/ggdc/productivity/pwt/) 9.1 
+(downloaded September 17, 2019, named `data/pwt91.dta`)
+and the [Standardized World Income Inequality Database](https://fsolt.org/swiid/) 
+(downloaded September 17, 2019, named `data/swiid.dta`).
+
+| Variable| Description             | Unit                   | Source    |
+| --------|:-----------------------:| :---------------------:|:---------:|
+| country | The iso3 country code   | iso3c                  | [Info][1] |
+| year    | The year of observation | year                   | NA |
+| gdp_pc_chppp | Per-capita income (expenditure-side) |  Real GDP at chained PPP | [Penn World tables 9.1][2] |
+| gini_solt_disp  | Post-tax inequality  | Gini index        | [SWIID Version 8.1][3] |
+| gini_solt_mkt   | Pre-tax inequality   | Gini index        | [SWIID Version 8.1][3] |
+
+[1]: https://unstats.un.org/unsd/tradekb/knowledgebase/country-code
+[2]: https://www.rug.nl/ggdc/productivity/pwt/
+[3]: https://doi.org/10.7910/DVN/LM4OWF
+
+The dataset relevant to reproduce the results is `data/dataset.csv`.
+The file `data/dataset_raw.csv` is created directly from the raw data and only
+excludes countries with less than 26 observations. I still contains those without 
+a unit root in their Gini time series. As explained in the paper, these countries 
+have been removed before the analysis and they are not contained in the file 
+`data/dataset.csv` any more. See the file `R/create_dataset.R` for details, and
+the file `stata/do-file_Flechtner_Graebner_2019_gdp-ineq-cointegration-short_country_unitroots` for the respective unit root tests.
+
+### Descriptive statistics on the sample level
+
+```{r, echo=FALSE, message=FALSE}
+library(countrycode)
+library(data.table)
+library(here)
+library(knitr)
+library(tidyverse)
+full_data <- fread(here("data/dataset.csv"))
+descriptives_agg <- full_data %>%
+  group_by() %>%
+  summarise(`First observation`=min(year),
+            `Last observation`=max(year),
+            `Total number of observations`=n(), 
+            `GDP per capita (mean)`=mean(gdp_pc_chppp),
+            `GDP per capita (sd)`=sd(gdp_pc_chppp),
+            `Post-tax gini (mean)`=mean(gini_disp),
+            `Post-tax gini (sd)`=sd(gini_disp),
+            `Pre-tax gini (mean)`=mean(gini_mkt),
+            `Pre-tax gini (sd)`=sd(gini_mkt)) %>%
+  ungroup() %>%
+  gather()
+kable(descriptives_agg, 
+      caption = "Descriptive statistics for the data used (aggregated)", 
+      digits = 2)
+```
+
+
+### Descriptive statistics on the country level
+
+```{r, echo=FALSE, message=FALSE}
+descriptives <- full_data %>%
+  group_by(country) %>%
+  summarise(y_min=min(year),
+            y_max=max(year),
+            n=n(), 
+            GDPpc_mean=mean(gdp_pc_chppp),
+            GDPpc_sd=sd(gdp_pc_chppp),
+            GINIdisp_mean=mean(gini_disp),
+            GINIdisp_sd=sd(gini_disp),
+            GINImkt_mean=mean(gini_mkt),
+            GINImkt_sd=sd(gini_mkt)) %>%
+  ungroup() %>%
+  unite("period", y_min, y_max, sep = "-") %>%
+  mutate(country=countrycode(country, "iso3c", "country.name"))
+kable(descriptives, 
+      caption = "Descriptive statistics for the data used (country level)", 
+      digits = 2)
+```
+
+
+### Citations for the data
+
+Feenstra, Robert C., Robert Inklaar and Marcel P. Timmer (2015): 
+The Next Generation of the Penn World Table, *American Economic Review*, Vol. 105(10), 
+3150-3182, available for download at [www.ggdc.net/pwt](www.ggdc.net/pwt)
+
+Solt, Frederick (2019): *Measuring Income Inequality Across Countries and Over Time: The Standardized World Income Inequality Database*, SWIID Version 8.1, May 2019. 

@@ -1,0 +1,1253 @@
+{smcl}
+{com}{sf}{ul off}{txt}
+{com}. cap log using ".\output\logfile_ginidispln-GDPpercapitaln.smcl", replace
+{txt}
+{com}. 
+. *** 1 Basic time-series properties: panel unit root tests - integrated of order 1?
+. 
+. xtunitroot ips gdp_pc_chppp_ln, lags(aic 5)
+
+{txt}Im-Pesaran-Shin unit-root test for {res}gdp_pc_chppp_ln
+{txt}{hline 50}
+Ho: All panels contain unit roots{col 45}Number of panels{col 68}={col 69}{res}     87
+{txt}Ha: Some panels are stationary{col 45}Avg. number of periods{col 68}={col 69}{res}  40.48
+
+{txt}AR parameter: {res}Panel-specific{txt}{col 45}Asymptotics: {res}T,N -> Infinity
+{txt}Panel means:  {res}Included{col 63}sequentially
+{txt}Time trend:   {res}Not included
+
+{txt}ADF regressions: {res}1.23{txt} lags average (chosen by {res}AIC{txt})
+{hline 78}
+{col 21}Statistic{col 36}p-value
+{hline 78}
+{col 2}W-t-bar{res}{col 21}  8.0252{col 37}1.0000
+{txt}{hline 78}
+
+{com}. xtunitroot ips gdp_pc_chppp_ln, lags(aic 5) trend
+
+{txt}Im-Pesaran-Shin unit-root test for {res}gdp_pc_chppp_ln
+{txt}{hline 50}
+Ho: All panels contain unit roots{col 45}Number of panels{col 68}={col 69}{res}     87
+{txt}Ha: Some panels are stationary{col 45}Avg. number of periods{col 68}={col 69}{res}  40.48
+
+{txt}AR parameter: {res}Panel-specific{txt}{col 45}Asymptotics: {res}T,N -> Infinity
+{txt}Panel means:  {res}Included{col 63}sequentially
+{txt}Time trend:   {res}Included
+
+{txt}ADF regressions: {res}1.67{txt} lags average (chosen by {res}AIC{txt})
+{hline 78}
+{col 21}Statistic{col 36}p-value
+{hline 78}
+{col 2}W-t-bar{res}{col 21} -2.8376{col 37}0.0023
+{txt}{hline 78}
+
+{com}. xtunitroot ips gdp_pc_chppp_ln, lags(aic 5) demean
+
+{txt}Im-Pesaran-Shin unit-root test for {res}gdp_pc_chppp_ln
+{txt}{hline 50}
+Ho: All panels contain unit roots{col 45}Number of panels{col 68}={col 69}{res}     87
+{txt}Ha: Some panels are stationary{col 45}Avg. number of periods{col 68}={col 69}{res}  40.48
+
+{txt}AR parameter: {res}Panel-specific{txt}{col 45}Asymptotics: {res}T,N -> Infinity
+{txt}Panel means:  {res}Included{col 63}sequentially
+{txt}Time trend:   {res}Not included{txt}{col 45}Cross-sectional means removed
+
+ADF regressions: {res}1.56{txt} lags average (chosen by {res}AIC{txt})
+{hline 78}
+{col 21}Statistic{col 36}p-value
+{hline 78}
+{col 2}W-t-bar{res}{col 21}  6.5835{col 37}1.0000
+{txt}{hline 78}
+
+{com}. xtunitroot ips gdp_pc_chppp_ln, lags(aic 5) trend demean
+
+{txt}Im-Pesaran-Shin unit-root test for {res}gdp_pc_chppp_ln
+{txt}{hline 50}
+Ho: All panels contain unit roots{col 45}Number of panels{col 68}={col 69}{res}     87
+{txt}Ha: Some panels are stationary{col 45}Avg. number of periods{col 68}={col 69}{res}  40.48
+
+{txt}AR parameter: {res}Panel-specific{txt}{col 45}Asymptotics: {res}T,N -> Infinity
+{txt}Panel means:  {res}Included{col 63}sequentially
+{txt}Time trend:   {res}Included{txt}{col 45}Cross-sectional means removed
+
+ADF regressions: {res}1.68{txt} lags average (chosen by {res}AIC{txt})
+{hline 78}
+{col 21}Statistic{col 36}p-value
+{hline 78}
+{col 2}W-t-bar{res}{col 21} 10.8198{col 37}1.0000
+{txt}{hline 78}
+
+{com}. xtunitroot ips gini_disp, lags(aic 5)
+
+{txt}Im-Pesaran-Shin unit-root test for {res}gini_disp
+{txt}{hline 44}
+Ho: All panels contain unit roots{col 45}Number of panels{col 68}={col 69}{res}     87
+{txt}Ha: Some panels are stationary{col 45}Avg. number of periods{col 68}={col 69}{res}  40.48
+
+{txt}AR parameter: {res}Panel-specific{txt}{col 45}Asymptotics: {res}T,N -> Infinity
+{txt}Panel means:  {res}Included{col 63}sequentially
+{txt}Time trend:   {res}Not included
+
+{txt}ADF regressions: {res}1.83{txt} lags average (chosen by {res}AIC{txt})
+{hline 78}
+{col 21}Statistic{col 36}p-value
+{hline 78}
+{col 2}W-t-bar{res}{col 21}  0.1933{col 37}0.5766
+{txt}{hline 78}
+
+{com}. xtunitroot ips gini_disp, lags(aic 5) trend
+
+{txt}Im-Pesaran-Shin unit-root test for {res}gini_disp
+{txt}{hline 44}
+Ho: All panels contain unit roots{col 45}Number of panels{col 68}={col 69}{res}     87
+{txt}Ha: Some panels are stationary{col 45}Avg. number of periods{col 68}={col 69}{res}  40.48
+
+{txt}AR parameter: {res}Panel-specific{txt}{col 45}Asymptotics: {res}T,N -> Infinity
+{txt}Panel means:  {res}Included{col 63}sequentially
+{txt}Time trend:   {res}Included
+
+{txt}ADF regressions: {res}1.93{txt} lags average (chosen by {res}AIC{txt})
+{hline 78}
+{col 21}Statistic{col 36}p-value
+{hline 78}
+{col 2}W-t-bar{res}{col 21} -1.3683{col 37}0.0856
+{txt}{hline 78}
+
+{com}. xtunitroot ips gini_disp, lags(aic 5) demean
+
+{txt}Im-Pesaran-Shin unit-root test for {res}gini_disp
+{txt}{hline 44}
+Ho: All panels contain unit roots{col 45}Number of panels{col 68}={col 69}{res}     87
+{txt}Ha: Some panels are stationary{col 45}Avg. number of periods{col 68}={col 69}{res}  40.48
+
+{txt}AR parameter: {res}Panel-specific{txt}{col 45}Asymptotics: {res}T,N -> Infinity
+{txt}Panel means:  {res}Included{col 63}sequentially
+{txt}Time trend:   {res}Not included{txt}{col 45}Cross-sectional means removed
+
+ADF regressions: {res}1.25{txt} lags average (chosen by {res}AIC{txt})
+{hline 78}
+{col 21}Statistic{col 36}p-value
+{hline 78}
+{col 2}W-t-bar{res}{col 21}  5.1901{col 37}1.0000
+{txt}{hline 78}
+
+{com}. xtunitroot ips gini_disp, lags(aic 5) trend demean
+
+{txt}Im-Pesaran-Shin unit-root test for {res}gini_disp
+{txt}{hline 44}
+Ho: All panels contain unit roots{col 45}Number of panels{col 68}={col 69}{res}     87
+{txt}Ha: Some panels are stationary{col 45}Avg. number of periods{col 68}={col 69}{res}  40.48
+
+{txt}AR parameter: {res}Panel-specific{txt}{col 45}Asymptotics: {res}T,N -> Infinity
+{txt}Panel means:  {res}Included{col 63}sequentially
+{txt}Time trend:   {res}Included{txt}{col 45}Cross-sectional means removed
+
+ADF regressions: {res}1.44{txt} lags average (chosen by {res}AIC{txt})
+{hline 78}
+{col 21}Statistic{col 36}p-value
+{hline 78}
+{col 2}W-t-bar{res}{col 21}  3.8047{col 37}0.9999
+{txt}{hline 78}
+
+{com}. 
+. ** 2 Are the time series cointegrated? ==> long-run relationship
+. 
+. xtcointtest kao gini_disp_ln gdp_pc_chppp_ln
+{res}
+{txt}Kao test for cointegration
+{hline 26}
+Ho: No cointegration{col 45}Number of panels{col 68}={col 69}{res}     87
+{txt}Ha: All panels are cointegrated{col 45}Avg. number of periods{col 68}={col 69}{res} 38.483
+
+{txt}Cointegrating vector: {res}Same
+{txt}Panel means: {res}{col 23}Included{txt}{col 45}Kernel: {res}{col 63}Bartlett
+{txt}Time trend: {res}{col 23}Not included{txt}{col 45}Lags: {res}{col 62} 2.14{txt} ({res}Newey-West{txt})
+AR parameter: {res}{col 23}Same{txt}{col 45}Augmented lags:{res}{col 63}1 
+{txt}{hline 78}
+{col 45}Statistic{col 63}p-value
+{hline 78}
+{col 2}Modified Dickey-Fuller t{res}{col 45}  1.9106{col 63}0.0280
+{txt}{col 2}Dickey-Fuller t{res}{col 45} -1.1118{col 63}0.1331
+{txt}{col 2}Augmented Dickey-Fuller t{res}{col 45} -3.1072{col 63}0.0009
+{txt}{col 2}Unadjusted modified Dickey-Fuller t{res}{col 45}  5.3768{col 63}0.0000
+{txt}{col 2}Unadjusted Dickey-Fuller t{res}{col 45}  2.0856{col 63}0.0185
+{txt}{hline 78}
+
+{com}. xtcointtest pedroni gini_disp_ln gdp_pc_chppp_ln
+{res}
+{txt}Pedroni test for cointegration
+{hline 30}
+Ho: No cointegration{col 45}Number of panels{col 68}={col 69}{res}     87
+{txt}Ha: All panels are cointegrated{col 45}Avg. number of periods{col 68}={col 69}{res} 39.483
+
+{txt}Cointegrating vector: {res}Panel specific
+{txt}Panel means: {res}{col 23}Included{txt}{col 45}Kernel: {res}{col 63}Bartlett
+{txt}Time trend: {res}{col 23}Not included{txt}{col 45}Lags: {res}{col 62} 3.00{txt} ({res}Newey-West{txt})
+AR parameter: {res}{col 23}Panel specific{txt}{col 45}Augmented lags:{res}{col 63}1 
+{txt}{hline 78}
+{col 45}Statistic{col 63}p-value
+{hline 78}
+{col 2}Modified Phillips-Perron t{res}{col 43}    0.7900{col 63}0.2148
+{txt}{col 2}Phillips-Perron t{res}{col 43}    1.7045{col 63}0.0441
+{txt}{col 2}Augmented Dickey-Fuller t{res}{col 43}    2.3697{col 63}0.0089
+{txt}{hline 78}
+
+{com}. xtcointtest pedroni gini_disp_ln gdp_pc_chppp_ln, trend
+{res}
+{txt}Pedroni test for cointegration
+{hline 30}
+Ho: No cointegration{col 45}Number of panels{col 68}={col 69}{res}     87
+{txt}Ha: All panels are cointegrated{col 45}Avg. number of periods{col 68}={col 69}{res} 39.483
+
+{txt}Cointegrating vector: {res}Panel specific
+{txt}Panel means: {res}{col 23}Included{txt}{col 45}Kernel: {res}{col 63}Bartlett
+{txt}Time trend: {res}{col 23}Included{txt}{col 45}Lags: {res}{col 62} 3.00{txt} ({res}Newey-West{txt})
+AR parameter: {res}{col 23}Panel specific{txt}{col 45}Augmented lags:{res}{col 63}1 
+{txt}{hline 78}
+{col 45}Statistic{col 63}p-value
+{hline 78}
+{col 2}Modified Phillips-Perron t{res}{col 43}    1.8914{col 63}0.0293
+{txt}{col 2}Phillips-Perron t{res}{col 43}    6.4856{col 63}0.0000
+{txt}{col 2}Augmented Dickey-Fuller t{res}{col 43}    9.9759{col 63}0.0000
+{txt}{hline 78}
+
+{com}. xtcointtest pedroni gini_disp_ln gdp_pc_chppp_ln, trend ar(same)
+{res}
+{txt}Pedroni test for cointegration
+{hline 30}
+Ho: No cointegration{col 45}Number of panels{col 68}={col 69}{res}     87
+{txt}Ha: All panels are cointegrated{col 45}Avg. number of periods{col 68}={col 69}{res} 39.483
+
+{txt}Cointegrating vector: {res}Panel specific
+{txt}Panel means: {res}{col 23}Included{txt}{col 45}Kernel: {res}{col 63}Bartlett
+{txt}Time trend: {res}{col 23}Included{txt}{col 45}Lags: {res}{col 62} 3.00{txt} ({res}Newey-West{txt})
+AR parameter: {res}{col 23}Same{txt}{col 45}Augmented lags:{res}{col 63}1 
+{txt}{hline 78}
+{col 45}Statistic{col 63}p-value
+{hline 78}
+{col 2}Modified variance ratio{res}{col 43}   -0.6816{col 63}0.2477
+{txt}{col 2}Modified Phillips-Perron t{res}{col 43}    4.2242{col 63}0.0000
+{txt}{col 2}Phillips-Perron t{res}{col 43}    6.6484{col 63}0.0000
+{txt}{col 2}Augmented Dickey-Fuller t{res}{col 43}   10.1438{col 63}0.0000
+{txt}{hline 78}
+
+{com}. xtcointtest westerlund gini_disp_ln gdp_pc_chppp_ln
+{res}
+{txt}Westerlund test for cointegration
+{hline 33}
+Ho: No cointegration{col 45}Number of panels{col 68}={col 69}{res}     87
+{txt}Ha: Some panels are cointegrated{col 45}Avg. number of periods{col 68}={col 69}{res} 40.483
+
+{txt}Cointegrating vector: {res}Panel specific
+{txt}Panel means: {res}{col 23}Included
+{txt}Time trend: {res}{col 23}Not included
+{txt}AR parameter: {res}{col 23}Panel specific
+{txt}{hline 78}
+{col 45}Statistic{col 63}p-value
+{hline 78}
+{col 2}Variance ratio{res}{col 43}   -7.3685{col 63}0.0000
+{txt}{hline 78}
+
+{com}. xtcointtest westerlund gini_disp_ln gdp_pc_chppp_ln, allpanels
+{res}
+{txt}Westerlund test for cointegration
+{hline 33}
+Ho: No cointegration{col 45}Number of panels{col 68}={col 69}{res}     87
+{txt}Ha: All panels are cointegrated{col 45}Avg. number of periods{col 68}={col 69}{res} 40.483
+
+{txt}Cointegrating vector: {res}Panel specific
+{txt}Panel means: {res}{col 23}Included
+{txt}Time trend: {res}{col 23}Not included
+{txt}AR parameter: {res}{col 23}Same
+{txt}{hline 78}
+{col 45}Statistic{col 63}p-value
+{hline 78}
+{col 2}Variance ratio{res}{col 43}   -6.2239{col 63}0.0000
+{txt}{hline 78}
+
+{com}. 
+. *** 3 How is long-run relationship? ==> between-dimension group-mean panel DOLS estimator
+. 
+. xtpedroni gdp_pc_chppp_ln gini_disp_ln, extraobs full notest
+
+
+Please Wait: Calculating Statistics
+
+
+{txt}DOLS regression for panel unit: 1
+Lags and leads: 2{col 37}Lags used in kernel: 4
+{col 37}Number of obs: 52
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    3.299}}}{space 1}{space 1}{ralign 9:{res:{sf:    6.437}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 2
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 23
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -1.734}}}{space 1}{space 1}{ralign 9:{res:{sf:   -1.197}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 3
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 45
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -.2656}}}{space 1}{space 1}{ralign 9:{res:{sf:   -.8628}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 4
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 30
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -.7545}}}{space 1}{space 1}{ralign 9:{res:{sf:   -1.296}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 5
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 33
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:     .289}}}{space 1}{space 1}{ralign 9:{res:{sf:    .4741}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 6
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 48
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -2.579}}}{space 1}{space 1}{ralign 9:{res:{sf:   -3.959}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 7
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 24
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -2.525}}}{space 1}{space 1}{ralign 9:{res:{sf:    -2.09}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 8
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 23
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -6.761}}}{space 1}{space 1}{ralign 9:{res:{sf:   -.9262}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 9
+Lags and leads: 2{col 37}Lags used in kernel: 4
+{col 37}Number of obs: 53
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    .1519}}}{space 1}{space 1}{ralign 9:{res:{sf:    .1655}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 10
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 26
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -18.87}}}{space 1}{space 1}{ralign 9:{res:{sf:   -4.553}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 11
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 44
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -2.666}}}{space 1}{space 1}{ralign 9:{res:{sf:   -3.298}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 12
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 31
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    1.265}}}{space 1}{space 1}{ralign 9:{res:{sf:    3.171}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 13
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 45
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -1.964}}}{space 1}{space 1}{ralign 9:{res:{sf:   -2.098}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 14
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 33
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    1.697}}}{space 1}{space 1}{ralign 9:{res:{sf:    10.22}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 15
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 26
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -13.78}}}{space 1}{space 1}{ralign 9:{res:{sf:   -1.136}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 16
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 43
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    4.628}}}{space 1}{space 1}{ralign 9:{res:{sf:    2.482}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 17
+Lags and leads: 2{col 37}Lags used in kernel: 4
+{col 37}Number of obs: 52
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -1.357}}}{space 1}{space 1}{ralign 9:{res:{sf:   -3.209}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 18
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 27
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -1.974}}}{space 1}{space 1}{ralign 9:{res:{sf:   -1.725}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 19
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 22
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -3.031}}}{space 1}{space 1}{ralign 9:{res:{sf:   -3.267}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 20
+Lags and leads: 2{col 37}Lags used in kernel: 4
+{col 37}Number of obs: 52
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -2.079}}}{space 1}{space 1}{ralign 9:{res:{sf:   -4.649}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 21
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 37
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    -1.89}}}{space 1}{space 1}{ralign 9:{res:{sf:   -7.353}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 22
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 26
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    2.124}}}{space 1}{space 1}{ralign 9:{res:{sf:     1.03}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 23
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 36
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:       12}}}{space 1}{space 1}{ralign 9:{res:{sf:    5.998}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 24
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 38
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -2.087}}}{space 1}{space 1}{ralign 9:{res:{sf:    -1.96}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 25
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 22
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -3.327}}}{space 1}{space 1}{ralign 9:{res:{sf:   -3.251}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 26
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 47
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -.4101}}}{space 1}{space 1}{ralign 9:{res:{sf:   -1.435}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 27
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 32
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    3.858}}}{space 1}{space 1}{ralign 9:{res:{sf:    10.07}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 28
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 50
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:      .36}}}{space 1}{space 1}{ralign 9:{res:{sf:    .6393}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 29
+Lags and leads: 2{col 37}Lags used in kernel: 4
+{col 37}Number of obs: 52
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    .3144}}}{space 1}{space 1}{ralign 9:{res:{sf:    1.127}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 30
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 23
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    5.154}}}{space 1}{space 1}{ralign 9:{res:{sf:    10.57}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 31
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 38
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -1.981}}}{space 1}{space 1}{ralign 9:{res:{sf:   -2.459}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 32
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 29
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    1.192}}}{space 1}{space 1}{ralign 9:{res:{sf:    3.662}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 33
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 48
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    8.086}}}{space 1}{space 1}{ralign 9:{res:{sf:    4.612}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 34
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 25
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -.8467}}}{space 1}{space 1}{ralign 9:{res:{sf:   -.1916}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 35
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 22
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -2.808}}}{space 1}{space 1}{ralign 9:{res:{sf:   -23.61}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 36
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 43
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    .5246}}}{space 1}{space 1}{ralign 9:{res:{sf:    1.753}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 37
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 35
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    2.367}}}{space 1}{space 1}{ralign 9:{res:{sf:    6.323}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 38
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 40
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -3.347}}}{space 1}{space 1}{ralign 9:{res:{sf:   -4.916}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 39
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 43
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -3.586}}}{space 1}{space 1}{ralign 9:{res:{sf:   -2.554}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 40
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 34
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -1.594}}}{space 1}{space 1}{ralign 9:{res:{sf:   -3.649}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 41
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 23
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    6.121}}}{space 1}{space 1}{ralign 9:{res:{sf:    3.383}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 42
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 24
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -2.088}}}{space 1}{space 1}{ralign 9:{res:{sf:   -2.792}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 43
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 50
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    1.223}}}{space 1}{space 1}{ralign 9:{res:{sf:     2.08}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 44
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 23
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -4.798}}}{space 1}{space 1}{ralign 9:{res:{sf:   -7.447}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 45
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 35
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:     5.23}}}{space 1}{space 1}{ralign 9:{res:{sf:    19.47}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 46
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 48
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -7.726}}}{space 1}{space 1}{ralign 9:{res:{sf:   -2.963}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 47
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 42
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    1.117}}}{space 1}{space 1}{ralign 9:{res:{sf:    2.033}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 48
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 22
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    4.184}}}{space 1}{space 1}{ralign 9:{res:{sf:     5.89}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 49
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 27
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    .7099}}}{space 1}{space 1}{ralign 9:{res:{sf:    1.049}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 50
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 26
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:     9.53}}}{space 1}{space 1}{ralign 9:{res:{sf:    2.467}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 51
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 23
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -4.256}}}{space 1}{space 1}{ralign 9:{res:{sf:   -5.646}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 52
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 46
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    9.836}}}{space 1}{space 1}{ralign 9:{res:{sf:    3.335}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 53
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 49
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    1.119}}}{space 1}{space 1}{ralign 9:{res:{sf:    1.304}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 54
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 23
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    2.056}}}{space 1}{space 1}{ralign 9:{res:{sf:    10.06}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 55
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 21
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -5.724}}}{space 1}{space 1}{ralign 9:{res:{sf:   -4.183}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 56
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 43
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    5.284}}}{space 1}{space 1}{ralign 9:{res:{sf:    4.473}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 57
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 42
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -3.269}}}{space 1}{space 1}{ralign 9:{res:{sf:   -8.266}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 58
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 35
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -1.188}}}{space 1}{space 1}{ralign 9:{res:{sf:   -1.224}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 59
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 43
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -.2279}}}{space 1}{space 1}{ralign 9:{res:{sf:   -.3387}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 60
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 29
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -.5034}}}{space 1}{space 1}{ralign 9:{res:{sf:   -.7082}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 61
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 31
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -1.018}}}{space 1}{space 1}{ralign 9:{res:{sf:   -1.198}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 62
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 47
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    2.305}}}{space 1}{space 1}{ralign 9:{res:{sf:    3.701}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 63
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 43
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -2.087}}}{space 1}{space 1}{ralign 9:{res:{sf:   -5.756}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 64
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 41
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -.5365}}}{space 1}{space 1}{ralign 9:{res:{sf:   -1.011}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 65
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 50
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    .7719}}}{space 1}{space 1}{ralign 9:{res:{sf:    .8809}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 66
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 29
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    1.557}}}{space 1}{space 1}{ralign 9:{res:{sf:    9.785}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 67
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 44
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    .2847}}}{space 1}{space 1}{ralign 9:{res:{sf:   .09144}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 68
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 21
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    17.15}}}{space 1}{space 1}{ralign 9:{res:{sf:    3.181}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 69
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 23
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    .9035}}}{space 1}{space 1}{ralign 9:{res:{sf:     1.13}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 70
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 28
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -2.402}}}{space 1}{space 1}{ralign 9:{res:{sf:   -2.406}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 71
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 35
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    2.789}}}{space 1}{space 1}{ralign 9:{res:{sf:    2.858}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 72
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 40
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    16.03}}}{space 1}{space 1}{ralign 9:{res:{sf:     7.75}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 73
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 38
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    5.859}}}{space 1}{space 1}{ralign 9:{res:{sf:    6.051}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 74
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 22
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    .5589}}}{space 1}{space 1}{ralign 9:{res:{sf:    3.161}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 75
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 22
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -.3694}}}{space 1}{space 1}{ralign 9:{res:{sf:   -.8831}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 76
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 22
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -3.407}}}{space 1}{space 1}{ralign 9:{res:{sf:   -15.29}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 77
+Lags and leads: 2{col 37}Lags used in kernel: 4
+{col 37}Number of obs: 53
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -.2232}}}{space 1}{space 1}{ralign 9:{res:{sf:   -1.372}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 78
+Lags and leads: 2{col 37}Lags used in kernel: 4
+{col 37}Number of obs: 51
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -.7268}}}{space 1}{space 1}{ralign 9:{res:{sf:    -.304}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 79
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 26
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    1.696}}}{space 1}{space 1}{ralign 9:{res:{sf:     3.88}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 80
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 26
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    1.073}}}{space 1}{space 1}{ralign 9:{res:{sf:    1.918}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 81
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 49
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    5.993}}}{space 1}{space 1}{ralign 9:{res:{sf:    5.517}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 82
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 42
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -9.203}}}{space 1}{space 1}{ralign 9:{res:{sf:   -6.108}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 83
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 23
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -2.979}}}{space 1}{space 1}{ralign 9:{res:{sf:   -6.153}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 84
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 32
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -1.284}}}{space 1}{space 1}{ralign 9:{res:{sf:   -.7628}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 85
+Lags and leads: 2{col 37}Lags used in kernel: 4
+{col 37}Number of obs: 52
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:   -.6866}}}{space 1}{space 1}{ralign 9:{res:{sf:   -1.258}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 86
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 36
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    6.966}}}{space 1}{space 1}{ralign 9:{res:{sf:    1.046}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+DOLS regression for panel unit: 87
+Lags and leads: 2{col 37}Lags used in kernel: 3
+{col 37}Number of obs: 35
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    10.55}}}{space 1}{space 1}{ralign 9:{res:{sf:    2.968}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+
+{bf:Pedroni's PDOLS (Group mean average):}
+No. of Panel units: 87{col 30}Lags and leads: 2
+Number of obs: 3087{col 30}Avg obs. per unit: 35
+Data has been time-demeaned.
+{res}
+{txt}{space 4}{hline 15}{c  TT}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:Variables}{space 1}{c |}{space 1}{ralign 9:Beta}{space 1}{space 1}{ralign 9:t-stat}{space 1}
+{space 4}{hline 15}{c   +}{hline 11}{hline 11}
+{space 4}{space 0}{ralign 14:gini_disp_ln~d}{space 1}{c |}{space 1}{ralign 9:{res:{sf:    .3595}}}{space 1}{space 1}{ralign 9:{res:{sf:    1.768}}}{space 1}
+{space 4}{hline 15}{c  BT}{hline 11}{hline 11}
+
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\CloudStation1\CloudStation\Paperprojekte\gdp-ineq-short\gdp-ineq-cointegration-short\output/logfile_ginidispln-GDPpercapitaln.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}19 Sep 2019, 11:12:25
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
