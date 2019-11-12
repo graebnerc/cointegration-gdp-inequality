@@ -5,7 +5,7 @@ Replication code and data for: "The heterogeneous relationship between income an
 
 [Svenja Flechtern](http://www.svenjaflechtner.de/) and [Claudius Gräbner](https://claudius-graebner.com/)
 
-Published as: Flechtner, S. and Gräbner, C. (2019): The heterogeneous relationship between income and inequality: a panel co-integration approach, *Economics Bulletin*, DOI: [xxx](xxx) (open access).
+Published as: Flechtner, S. and Gräbner, C. (2019): The heterogeneous relationship between income and inequality: a panel co-integration approach, in: *Economics Bulletin*, Vol. 39(4), p. 2540-2549. [Available online](http://www.accessecon.com/Pubs/EB/2019/Volume39/EB-19-V39-I4-P237.pdf) (open access).
 
 Description of code
 -------------------
